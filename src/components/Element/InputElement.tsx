@@ -26,7 +26,7 @@ const InputElement = () => {
     }
 
   useEffect(()=>{
-    const closeDropdown =(event:React.ChangeEvent<HTMLInputElement>)=>{
+    const closeDropdown =(event:MouseEvent |any )=>{
         if( refmenu.current &&!refmenu.current.contains(event.target)){ 
           setShaowData(false);
         }    
